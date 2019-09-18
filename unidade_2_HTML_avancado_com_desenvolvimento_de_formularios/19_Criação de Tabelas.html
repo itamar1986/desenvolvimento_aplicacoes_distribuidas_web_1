@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Criação de Tabelas</title>
+	</head>
+	<body>
+		<h2>Exemplo de criação e formatação de tabelas</h2>
+		<form id="cadastro" action="https://www.empresa.com.br/castratoestagio.php"
+			method="post">
+			<table border="1">
+			<tr>
+				<th colspan="4" align="center">CADASTRO DE ESTÁGIO</th>
+			</tr>
+			<tr>
+				<td align="right">Nome Completo:</td>
+				<td align="left" colspan="3"><input type="text" size="50" name="nome"></td>
+			</tr>
+			<tr>
+				<td align="right">Sexo:</td>
+				<td align="center"><input type="radio" name="sexo" value="f" checked> Feminino</td>
+				<td align="center"><input type="radio" name="sexo" value="m"> Masculino</td>
+			</tr>
+			<tr rowspan="2">
+				<td align="right">Nível Escolar:</td>
+				<td align="center" colspan="2">
+				<select name="nivelescolar">
+					<option value="1">Ensino Fundamental</option>
+					<option value="2"> Ensino Médio</option>
+					<option value="3">Ensino Superior</option>
+					<option value="4">Pós-Graduação</option>
+				</select></td>
+				<td align="center">
+				<input type="radio" name="situacao" value="1" checked>Completo<br>
+				<input type="radio" name="situacao" value="2">Incompleto</td>
+			</tr>
+			<tr>
+				<td align="right">Áreas de Interesse:</td>
+				<td align="center">
+				<input type="checkbox" name="internet" value="i">Internet</td>
+				<td align="center">
+				<input type="checkbox" name="bd" value="b">Banco de Dados</td> <td
+				align="center">
+				<input type="checkbox" name="programacao" value="p">Programação</td>
+			</tr>
+			<tr>
+				<td align="right">Por quê você deve ser escolhido?:</td>
+				<td align="center" colspan="3">
+				<textarea name="justificativa" rows="5" cols="50">Digite aqui...</textarea>
+			</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="submit" value="Enviar"></td>
+				<td colspan="2" align="center"><input type="reset" value="Limpar"></td>
+			</tr>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Criação de Tabelas</title>
+	</head>
+	<body>
+		<h2> Exemplo de criação e formatação de tabelas</h2>
+		<table border="1">
+			<tr>
+				<th>Tìtulo da coluna 1</th>
+				<th>Tìtulo da coluna 2</th>
+				<th>Tìtulo da coluna 3</th>
+			</tr>
+			<tr>
+				<td rowspan="2">Linhas: 1 e 2 / Coluna: 1</td>
+				<td>Linha: 1 / Coluna: 2</td>
+				<td>Linha: 2 / Coluna: 3</td>
+			</tr>
+			<tr>
+				<!-- <td>Linha: 2 / Coluna: 1</td>
+				Esta linha foi comentada, pois será substituída
+				pelo conteúdo da linha anterior-->
+				<td>Linha: 2 / Coluna: 2</td>
+				<td>Linha: 2 / Coluna: 3</td>
+			</tr>
+			<tr>
+				<td colspan="3"><center>Linha: 3 / Colunas: 1, 2 e 3</center></td>
+				<!-- <td>Linha: 3 / Coluna: 2</td>
+				<td>Linha: 3 / Coluna: 3</td>
+				Estas linhas foram comentadas, pois serão
+				substituídas pelo conteúdo da coluna anterior-->
+			</tr>
+		</table>
+	</body>
+</html>
