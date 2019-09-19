@@ -1,0 +1,59 @@
+h1 { 
+	text-decoration : underline ; text-align : center ; 
+	}
+	
+.texto_negrito { 
+				font-weight : bold ; 
+				}
+	
+a.sem_sublinhado {
+				text-decoration : none; 
+				}
+		
+p.sem_borda {
+			border-style : none; 
+			}
+		
+p.borda_pontilhada {
+					border-style : dotted; 
+					}
+		
+p.borda_tracejada {
+					border-style : dashed; 
+					}
+		
+p.borda_solida {
+				border-style : solid; 
+				}
+		
+p.borda_baixorelevo {
+					border-style : inset; 
+					}
+		
+p.borda_altorelevo {
+					border-style : outset; 
+					}
+					
+p.borda_dupla {
+				border-style : double; 
+				}
+				
+p.borda_fina {
+				border-style : solid; border-width : thin; 
+				}
+				
+p.borda_media {
+				border-style : solid; border-width : medium; 
+				}
+				
+p.borda_grossa {
+				border-style : solid; border-width : thick; 
+				}
+				
+p.borda_personalizada {
+						border-style : solid;
+						border-top-width : 10 pt ;
+						border-right-width : 10 pt ;
+						border-bottom-width : 10 pt ;
+						border-left-width : 10 pt ;
+					}

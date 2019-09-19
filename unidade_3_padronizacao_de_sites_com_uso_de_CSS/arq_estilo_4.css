@@ -1,0 +1,8 @@
+.posicao_tamanho_imagem
+	{
+		position : absolute ;
+		right : 10% ;
+		top : 16% ;
+		width : 380px ; /* largura da imagem: 380 pixels */
+		height : 150px ; /* altura da imagem: 150 pixels */
+	}

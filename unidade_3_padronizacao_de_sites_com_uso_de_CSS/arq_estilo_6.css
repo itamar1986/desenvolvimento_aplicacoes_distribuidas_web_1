@@ -1,0 +1,15 @@
+body { 
+	color: blue; text-align: justify; text-decoration: none; 
+	}
+	
+h1 { 
+	color: #ff0000; text-align: center; text-decoration: overline; text-transform: uppercase;
+	}
+	
+h2 { 
+	color: rgb(255,0,255); text-align: left; text-decoration: line-through; text-transform: lowercase;
+	}
+	
+h3 { 
+	color: #00ff00; text-align: right; text-decoration: underline; text-transform: capitalize;
+	}
