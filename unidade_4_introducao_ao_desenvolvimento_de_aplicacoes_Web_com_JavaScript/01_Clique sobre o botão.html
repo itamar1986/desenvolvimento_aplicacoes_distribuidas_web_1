@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<p>Clique sobre o botão para apresentar o valor de x=5 elevado a y=3.</p>
+		<button onclick="funcao1()">Clique aqui!</button>
+		<p id="exemplo1"></p>
+		<p>Clique sobre o botão para apresentar o caractere na posição 5 da string (texto): "Alô, Mundo!".</p>
+		<button onclick="funcao2()">Clique aqui!</button>
+		<p id="exemplo2"></p>
+		<p>Clique sobre o botão para apresentar a data e hora.</p>
+		<button onclick="funcao3()">Clique aqui!</button>
+		<p id="exemplo3"></p>
+		<script type="text/javascript">
+			function funcao1() {
+			var x=5;
+			var y=3;
+			var r = Math.pow(x, y);
+			document.getElementById("exemplo1").innerHTML = r;
+			}
+			function funcao2() {
+			var str = "Alô, Mundo!";
+			var r = str.charAt(5);
+			document.getElementById("exemplo2").innerHTML = r;
+			}
+			function funcao3() {
+			var dataHoje = new Date();
+			alert("Data e Hora:" + dataHoje);
+			}
+		</script>
+	</body>
+</html>

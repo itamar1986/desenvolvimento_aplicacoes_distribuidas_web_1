@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Validando Dados</title>
+	</head>
+	<body bgColor=white>
+		<center><font face="arial" size="5">E-mail:</font></center>
+		<form name="formulario" method="post">
+			<table border=0>
+			<tr>
+			<td>Data:</td>
+			<td><input size="40" name="email" onBlur="testaEmail()">
+			</tr>
+			</table>
+			</center> <br>
+			<center><input onClick="validar()" type="button" value="Enviar" name="botao"></center>
+		</form>
+		<script Language="JavaScript">
+			function testaEmail(){
+			var email=document.formulario.email.value;
+			var validaEmail=false;
+			if(email.indexOf("@")>0 && email.indexOf(".")>0 && email.length>10){
+			validaEmail=true;
+			document.formulario.botao.focus();
+			}
+			else {
+			alert(“Favor veirificar o E-mail");
+			document.formulario.email.focus();
+			}
+			}
+			function validar(){
+			if (validaEmail==true){
+			return true;
+			}
+			}
+		</script>
+	</body>
+</html>

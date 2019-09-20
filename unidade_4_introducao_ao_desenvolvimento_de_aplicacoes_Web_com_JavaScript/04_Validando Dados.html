@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Validando Dados</title>
+	</head>
+	<body bgColor=white>
+		<h1 align=center>Qual sistema operacional você usa?</h1>
+		<form name=form1>
+			<input type=radio name=r1 onClick="verifica(0)" >Windows XP<br>
+			<input type=radio name=r1 onClick="verifica(1)" >Windows 8<br>
+			<input type=radio name=r1 onClick="verifica(2)" >Windows 10<br>
+		</form>
+		<script Language="JavaScript">
+		function verifica(escolha){
+		var msistema=escolha;
+		var sistemas=new Array();
+		sistemas[0]="Windows XP";
+		sistemas[1]="Windows 8";
+		sistemas[2]="Windows 10";
+		alert("O sistema que você usa é o " + sistemas[msistema])
+		}
+		</script>
+	</body>
+</html>

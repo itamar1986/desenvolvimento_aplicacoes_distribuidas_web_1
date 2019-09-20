@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Validando Dados</title></head>
+	<body bgColor=white>
+	<center><font face="arial" size="5">Dados do Cliente:</font></center>
+		<form name="formulario" method="post">
+			<table border=0>
+				<tr>
+					<td>Nome: </td>
+					<td><input size="30" name="nome"> </td>
+					<td>Telefone: </td>
+					<td><input size="15" name="telefone"> </td>
+				</tr>
+				<tr>
+					<td>Data:</td>
+					<td><input size="3" name="dia">/<input size="3" name="mes">/<input size="3"
+					name="ano">
+				</tr>
+			</table>
+			</center> <br>
+			<center><input onClick="validar()" type="button" value="Enviar" name="botao">
+			</center>
+		</form>
+		<script Language="JavaScript">
+		function validar(){
+		var nome=document.formulario.nome.value;
+		var telefone=document.formulario.telefone.value;
+		var dia=document.formulario.dia.value;
+		var mes=document.formulario.mes.value;
+		var ano=document.formulario.ano.value;
+		var validaNome=false;
+		var validaTelefone=false;
+		var validaData=false;
+		if(nome =="") {
+		alert("O campo nome está vazio!");
+		document.formulario.nome.focus();
+		return false;
+		}
+		if(nome.length < 4) {
+		alert("O seu nome parece incompleto!");
+		document.formulario.nome.focus();
+		return false;
+		}
+		if(isNaN(nome)== false) {
+		alert("Digite um nome, você digitou um número!");
+		document.formulario.nome.focus();
+		return false;
+		}
+		if(isNaN(nome)== true) {
+		validaNome=true;
+		}
+		if(telefone=="") {
+		alert("O campo telefone está vazio!");
+		document.formulario.telefone.focus();
+		return false;
+		}
+		if(isNaN(telefone)== true) {
+		alert("Digite somente números!");
+		document.telefone.focus();
+		return false;
+		}
+		if(isNaN(telefone)== false) {
+		validaTelefone=true;
+		}
+		if(dia=="" || mes=="" || ano=="") {
+		alert("Algum campo da data está vazio!");
+		document.formulario.dia.focus();
+		return false;
+		}
+		if(isNaN(dia)==true || isNaN(mes)==true || isNaN(ano)== true) {
+		alert("Digite somente números nos campos da data!");
+		document.formulario.dia.focus();
+		return false;
+		}
+		if(isNaN(dia)==false && isNaN(mes)==false && isNaN(ano)==false) {
+		validaData=true;
+		}
+		if(validaNome==true && validaTelefone==true && validaData==true) {
+		alert("Parabéns " + nome + ", seus dados foram enviados com sucesso!");
+		return true;
+		}
+		}
+		</script>
+	</body>
+</html>
